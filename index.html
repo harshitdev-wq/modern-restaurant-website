@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Auré — European Fine Dining</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Jost:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+<!-- ============ NAV ============ -->
+<header class="fixed top-0 inset-x-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 sm:px-10 py-5 flex items-center justify-between">
+    <a href="#top" class="font-display italic text-2xl tracking-wide" style="color:var(--gold-soft)">Maison Auré</a>
+
+    <nav class="hidden md:flex items-center gap-9 text-sm tracking-wide" style="color:var(--ivory)">
+      <a href="#philosophy" class="nav-link">Philosophy</a>
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#reviews" class="nav-link">Guests</a>
+      <a href="#visit" class="nav-link">Visit</a>
+      <a href="#reserve" class="btn-gold px-5 py-2 rounded-full text-xs uppercase">Reserve a Table</a>
+    </nav>
+
+    <button id="menuToggle" class="md:hidden glass rounded-full w-11 h-11 flex items-center justify-center">
+      <svg id="iconMenu" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu mx-4 mt-2 glass rounded-2xl px-6 py-6 gap-5 text-lg font-display">
+    <a href="#philosophy" class="mobile-link">Philosophy</a>
+    <a href="#menu" class="mobile-link">Menu</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#reviews" class="mobile-link">Guests</a>
+    <a href="#visit" class="mobile-link">Visit</a>
+    <a href="#reserve" class="btn-gold text-center rounded-full py-3 text-sm uppercase font-sans">Reserve a Table</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative w-full min-h-screen flex items-end overflow-hidden">
+  <img src="assets/images/hero-tombilis.jpg" alt="Tombili's Table street terrace" class="hero-photo absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(27,14,16,.35) 0%, rgba(27,14,16,.55) 55%, var(--ink) 100%);"></div>
+  <div class="grain"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 pb-20 pt-40 w-full">
+    <p class="uppercase text-xs sm:text-sm tracking-[0.35em] mb-6" style="color:var(--gold)">Est. 1998 &nbsp;·&nbsp; Rue des Lilas, Lyon</p>
+    <h1 class="font-display italic leading-[1.02] text-5xl sm:text-6xl md:text-8xl max-w-4xl" style="color:var(--ivory)">
+      Slow food,<br> set to candlelight.
+    </h1>
+    <p class="mt-7 max-w-lg text-base sm:text-lg font-light" style="color:rgba(244,235,218,.8)">
+      A European table built on old technique and honest ingredients — where every course is an argument for taking your time.
+    </p>
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a href="#reserve" class="btn-gold px-8 py-3.5 rounded-full text-sm uppercase tracking-wide">Reserve a Table</a>
+      <a href="#menu" class="btn-outline px-8 py-3.5 rounded-full text-sm uppercase tracking-wide">View the Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section id="philosophy" class="relative py-28 sm:py-36 px-6 sm:px-10">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+    <div class="reveal">
+      <div class="flex items-center gap-4 mb-8">
+        <div class="divider-leaf flex items-center w-24"></div>
+        <span class="font-mono text-xs uppercase tracking-widest" style="color:var(--gold)">The House</span>
+      </div>
+      <h2 class="font-display italic text-4xl sm:text-5xl leading-tight mb-6" style="color:var(--ivory)">
+        Three generations, one open kitchen.
+      </h2>
+      <p class="text-base leading-relaxed font-light" style="color:rgba(244,235,218,.78)">
+        Maison Auré began as a nineteen-seat bistro run by a butcher's daughter with a taste for Burgundy and no patience for shortcuts. Today the kitchen still opens onto the dining room, the stock still simmers for two days, and the wine list is still chosen by hand, bottle by bottle, from growers we've known for decades.
+      </p>
+      <p class="mt-5 text-base leading-relaxed font-light" style="color:rgba(244,235,218,.78)">
+        We cook the way our grandmothers taught us — with butter, with patience, and with the conviction that a good meal should slow the whole evening down.
+      </p>
+
+      <div class="mt-10 flex items-center gap-10">
+        <div>
+          <p class="font-display text-3xl" style="color:var(--gold-soft)">27</p>
+          <p class="text-xs uppercase tracking-widest mt-1" style="color:rgba(244,235,218,.6)">Years Open</p>
+        </div>
+        <div>
+          <p class="font-display text-3xl" style="color:var(--gold-soft)">1</p>
+          <p class="text-xs uppercase tracking-widest mt-1" style="color:rgba(244,235,218,.6)">Michelin Star</p>
+        </div>
+        <div>
+          <p class="font-display text-3xl" style="color:var(--gold-soft)">120+</p>
+          <p class="text-xs uppercase tracking-widest mt-1" style="color:rgba(244,235,218,.6)">Growers &amp; Farms</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal relative">
+      <img src="https://loremflickr.com/900/1100/chef,cooking,kitchen/all?lock=22" alt="Chef at work in the kitchen" class="about-photo rounded-sm w-full h-[520px] object-cover">
+      <div class="seal absolute -bottom-10 -left-10 hidden sm:flex glass">
+        <svg viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(201,161,90,.7)" stroke-width="1"/>
+          <text fill="#E4CFA0" font-size="9" letter-spacing="2">
+            <textPath href="#circlePath">MAISON AURÉ · EST. 1998 · LYON ·</textPath>
+          </text>
+          <path id="circlePath" d="M 60,60 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section id="menu" class="relative py-28 sm:py-36 px-6 sm:px-10" style="background:var(--wine-deep);">
+  <div class="grain"></div>
+  <div class="relative max-w-4xl mx-auto text-center reveal">
+    <div class="flex items-center gap-4 justify-center mb-6">
+      <div class="divider-leaf flex items-center w-20"></div>
+      <span class="font-mono text-xs uppercase tracking-widest" style="color:var(--gold)">Dégustation</span>
+      <div class="divider-leaf flex items-center w-20"></div>
+    </div>
+    <h2 class="font-display italic text-4xl sm:text-5xl md:text-6xl" style="color:var(--ivory)">A Menu Worth Lingering Over</h2>
+  </div>
+
+  <div class="relative max-w-3xl mx-auto mt-14 flex justify-center gap-8 sm:gap-12 flex-wrap font-display italic text-lg" style="color:rgba(244,235,218,.55)">
+    <button class="tab-btn active" data-tab="starters">Starters</button>
+    <button class="tab-btn" data-tab="mains">Mains</button>
+    <button class="tab-btn" data-tab="desserts">Desserts</button>
+    <button class="tab-btn" data-tab="wine">Wine</button>
+  </div>
+
+  <div class="relative max-w-3xl mx-auto mt-14">
+
+    <div class="menu-panel active" id="panel-starters">
+      <div class="menu-row mb-6"><span style="color:var(--ivory)">Escargots de Bourgogne, parsley butter, sourdough</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€19</span></div>
+      <div class="menu-row mb-6"><span style="color:var(--ivory)">Beetroot &amp; goat's cheese, hazelnut, sherry vinegar</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€16</span></div>
+      <div class="menu-row mb-6"><span style="color:var(--ivory)">Seared scallops, brown butter, cauliflower purée</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€24</span></div>
+      <div class="menu-row"><span style="color:var(--ivory)">Chilled leek &amp; potato velouté, chive oil</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€14</span></div>
+    </div>
+
+    <div class="menu-panel" id="panel-mains">
+      <div class="menu-row mb-6"><span style="color:var(--ivory)">Coq au vin, pearl onions, smoked lardons</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€32</span></div>
+      <div class="menu-row mb-6"><span style="color:var(--ivory)">Duck breast, cherry gastrique, roasted salsify</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€36</span></div>
+      <div class="menu-row mb-6"><span style="color:var(--ivory)">Bouillabaisse, saffron rouille, grilled baguette</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€38</span></div>
+      <div class="menu-row"><span style="color:var(--ivory)">Wild mushroom risotto, aged parmesan, truffle</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€28</span></div>
+    </div>
+
+    <div class="menu-panel" id="panel-desserts">
+      <div class="menu-row mb-6"><span style="color:var(--ivory)">Tarte Tatin, crème fraîche, calvados caramel</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€14</span></div>
+      <div class="menu-row mb-6"><span style="color:var(--ivory)">Dark chocolate fondant, salted caramel, sea foam</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€15</span></div>
+      <div class="menu-row"><span style="color:var(--ivory)">Crème brûlée, Tahitian vanilla, shortbread</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€13</span></div>
+    </div>
+
+    <div class="menu-panel" id="panel-wine">
+      <div class="menu-row mb-6"><span style="color:var(--ivory)">Chablis Premier Cru, Domaine Laroche</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€62</span></div>
+      <div class="menu-row mb-6"><span style="color:var(--ivory)">Côtes du Rhône, Domaine de la Janasse</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€48</span></div>
+      <div class="menu-row"><span style="color:var(--ivory)">Sancerre Rosé, Pascal Jolivet</span><span class="leader"></span><span class="font-mono" style="color:var(--gold-soft)">€54</span></div>
+    </div>
+
+    <p class="text-center text-xs mt-10 font-light" style="color:rgba(244,235,218,.5)">A tasting menu is available nightly for parties dining the full table · ask your server</p>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="relative py-28 sm:py-36 px-6 sm:px-10">
+  <div class="max-w-7xl mx-auto reveal">
+    <div class="flex items-end justify-between flex-wrap gap-6 mb-14">
+      <div>
+        <div class="flex items-center gap-4 mb-6">
+          <div class="divider-leaf flex items-center w-20"></div>
+          <span class="font-mono text-xs uppercase tracking-widest" style="color:var(--gold)">In the Room</span>
+        </div>
+        <h2 class="font-display italic text-4xl sm:text-5xl" style="color:var(--ivory)">A Table Set for the Evening</h2>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[180px] sm:auto-rows-[220px]">
+      <div class="gallery-item rounded-sm row-span-2"><img src="https://loremflickr.com/700/900/frenchfood,plating/all?lock=31" class="w-full h-full object-cover" alt="Plated dish"></div>
+      <div class="gallery-item rounded-sm"><img src="https://loremflickr.com/700/500/wine,cellar/all?lock=32" class="w-full h-full object-cover" alt="Wine cellar"></div>
+      <div class="gallery-item rounded-sm"><img src="https://loremflickr.com/700/500/steak,gourmet/all?lock=33" class="w-full h-full object-cover" alt="Seared meat course"></div>
+      <div class="gallery-item rounded-sm row-span-2"><img src="https://loremflickr.com/700/900/restaurant,interior,europe/all?lock=34" class="w-full h-full object-cover" alt="Dining room"></div>
+      <div class="gallery-item rounded-sm"><img src="https://loremflickr.com/700/500/dessert,chocolate,plating/all?lock=35" class="w-full h-full object-cover" alt="Dessert plating"></div>
+      <div class="gallery-item rounded-sm"><img src="https://loremflickr.com/700/500/oysters,seafood/all?lock=36" class="w-full h-full object-cover" alt="Seafood course"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="reviews" class="relative py-28 sm:py-36 px-6 sm:px-10" style="background:var(--wine-deep);">
+  <div class="grain"></div>
+  <div class="relative max-w-3xl mx-auto text-center reveal">
+    <div class="flex items-center gap-4 justify-center mb-10">
+      <div class="divider-leaf flex items-center w-20"></div>
+      <span class="font-mono text-xs uppercase tracking-widest" style="color:var(--gold)">Guests</span>
+      <div class="divider-leaf flex items-center w-20"></div>
+    </div>
+
+    <div id="quotes" class="min-h-[180px]">
+      <div class="quote-slide active">
+        <p class="font-display italic text-2xl sm:text-3xl leading-snug" style="color:var(--ivory)">
+          "The kind of meal that resets your sense of what a restaurant can be. Unhurried, generous, exact."
+        </p>
+        <p class="mt-6 text-sm uppercase tracking-widest" style="color:var(--gold)">— Le Monde à Table</p>
+      </div>
+      <div class="quote-slide">
+        <p class="font-display italic text-2xl sm:text-3xl leading-snug" style="color:var(--ivory)">
+          "We booked for an anniversary and stayed for four hours. Nobody once made us feel like we should leave."
+        </p>
+        <p class="mt-6 text-sm uppercase tracking-widest" style="color:var(--gold)">— Camille R., Guest</p>
+      </div>
+      <div class="quote-slide">
+        <p class="font-display italic text-2xl sm:text-3xl leading-snug" style="color:var(--ivory)">
+          "Old-world cooking with none of the stuffiness. The coq au vin alone is worth the trip to Lyon."
+        </p>
+        <p class="mt-6 text-sm uppercase tracking-widest" style="color:var(--gold)">— Table &amp; Terroir Magazine</p>
+      </div>
+    </div>
+
+    <div class="flex justify-center gap-2 mt-10" id="quoteDots">
+      <button class="w-2 h-2 rounded-full dot active" data-i="0" style="background:var(--gold)"></button>
+      <button class="w-2 h-2 rounded-full dot" data-i="1" style="background:rgba(244,235,218,.3)"></button>
+      <button class="w-2 h-2 rounded-full dot" data-i="2" style="background:rgba(244,235,218,.3)"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVE ============ -->
+<section id="reserve" class="relative py-28 sm:py-36 px-6 sm:px-10 overflow-hidden">
+  <img src="https://loremflickr.com/1800/1000/restauranttable,candlelight/all?lock=41" class="reserve-photo absolute inset-0 w-full h-full object-cover" alt="Reserved table">
+  <div class="absolute inset-0" style="background:linear-gradient(180deg, var(--ink) 0%, rgba(27,14,16,.75) 30%, rgba(27,14,16,.85) 100%);"></div>
+
+  <div class="relative max-w-2xl mx-auto text-center reveal">
+    <div class="flex items-center gap-4 justify-center mb-6">
+      <div class="divider-leaf flex items-center w-20"></div>
+      <span class="font-mono text-xs uppercase tracking-widest" style="color:var(--gold)">Reservations</span>
+      <div class="divider-leaf flex items-center w-20"></div>
+    </div>
+    <h2 class="font-display italic text-4xl sm:text-5xl mb-5" style="color:var(--ivory)">Save Your Evening</h2>
+    <p class="font-light mb-12" style="color:rgba(244,235,218,.75)">Tables are held for fifteen minutes past your booking. Parties of seven or more, please call the house directly.</p>
+
+    <form class="glass rounded-2xl p-6 sm:p-8 grid sm:grid-cols-2 gap-4 text-left" onsubmit="event.preventDefault(); document.getElementById('formNote').classList.remove('hidden');">
+      <div class="flex flex-col gap-1.5">
+        <label class="text-xs uppercase tracking-widest" style="color:var(--gold)">Name</label>
+        <input required type="text" placeholder="Your full name" class="bg-transparent border-b py-2 outline-none placeholder:text-white/30" style="border-color:rgba(244,235,218,.25); color:var(--ivory)">
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label class="text-xs uppercase tracking-widest" style="color:var(--gold)">Phone</label>
+        <input required type="tel" placeholder="+33 ..." class="bg-transparent border-b py-2 outline-none placeholder:text-white/30" style="border-color:rgba(244,235,218,.25); color:var(--ivory)">
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label class="text-xs uppercase tracking-widest" style="color:var(--gold)">Date</label>
+        <input required type="date" class="bg-transparent border-b py-2 outline-none" style="border-color:rgba(244,235,218,.25); color:var(--ivory)">
+      </div>
+      <div class="flex flex-col gap-1.5">
+        <label class="text-xs uppercase tracking-widest" style="color:var(--gold)">Party Size</label>
+        <select class="bg-transparent border-b py-2 outline-none" style="border-color:rgba(244,235,218,.25); color:var(--ivory)">
+          <option class="text-black">2 Guests</option>
+          <option class="text-black">3 Guests</option>
+          <option class="text-black">4 Guests</option>
+          <option class="text-black">5–6 Guests</option>
+        </select>
+      </div>
+      <button type="submit" class="btn-gold sm:col-span-2 mt-2 rounded-full py-3.5 text-sm uppercase tracking-wide">Request a Table</button>
+      <p id="formNote" class="hidden sm:col-span-2 text-xs text-center" style="color:var(--gold-soft)">This is a demo form — no reservation has been made.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ VISIT / LOCATION ============ -->
+<section id="visit" class="relative py-24 sm:py-32 px-6 sm:px-10">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10 reveal">
+    <div>
+      <div class="divider-leaf flex items-center w-16 mb-6"></div>
+      <p class="font-mono text-xs uppercase tracking-widest mb-3" style="color:var(--gold)">Address</p>
+      <p class="font-display italic text-xl" style="color:var(--ivory)">14 Rue des Lilas<br>69001 Lyon, France</p>
+    </div>
+    <div>
+      <div class="divider-leaf flex items-center w-16 mb-6"></div>
+      <p class="font-mono text-xs uppercase tracking-widest mb-3" style="color:var(--gold)">Hours</p>
+      <p class="font-light leading-relaxed" style="color:rgba(244,235,218,.8)">Tuesday – Saturday<br>18:30 – 23:00<br>Closed Sunday &amp; Monday</p>
+    </div>
+    <div>
+      <div class="divider-leaf flex items-center w-16 mb-6"></div>
+      <p class="font-mono text-xs uppercase tracking-widest mb-3" style="color:var(--gold)">Contact</p>
+      <p class="font-light leading-relaxed" style="color:rgba(244,235,218,.8)">+33 4 72 00 00 00<br>bonsoir@maisonaure.fr</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="relative px-6 sm:px-10 py-12 border-t" style="border-color:rgba(244,235,218,.12);">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
+    <a href="#top" class="font-display italic text-xl" style="color:var(--gold-soft)">Maison Auré</a>
+    <p class="text-xs" style="color:rgba(244,235,218,.45)">© 2026 Maison Auré · Demo website built for portfolio purposes</p>
+    <div class="flex gap-6 text-xs uppercase tracking-widest" style="color:rgba(244,235,218,.55)">
+      <a href="#" class="hover:opacity-70">Instagram</a>
+      <a href="#" class="hover:opacity-70">Press</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
